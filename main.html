@@ -1,13 +1,39 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Downloader</title>
+    <style>
+        #loading {
+            display: none;
+            font-size: 18px;
+            color: blue;
+        }
+        #error {
+            color: red;
+            font-size: 18px;
+        }
+        img {
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
 
-<html>
-  <head>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+    <h2>Image Downloader</h2>
 
-  <body>
-    <!-- the entire body must be written by student -->
+    <button onclick="downloadImages()">Download Images</button>
+    
+    <div id="loading">Loading images, please wait...</div>
+    <div id="error"></div>
     <div id="output"></div>
-    <script type="text/javascript" src="./script.js"></script>
-  </body>
+
+    <script src="script.js"></script>
+
+</body>
 </html>
